@@ -31,9 +31,10 @@ public class Main {
         //System.out.println(topics.keySet());
         // Создаем список topicIndices, содержащий номера всех тем, чтобы затем отсортировать их по количеству страниц
         List<Integer> topicIndices = new ArrayList<>(topics.keySet());
+        System.out.println(topicIndices);
         // Сортируем темы по количеству страниц.
         Collections.sort(topicIndices, Comparator.comparingInt((Integer i) -> topics.get(i)[0]).thenComparingInt(i -> i));
-        //System.out.println(topicIndices);
+        System.out.println(topicIndices);
 
 
         // Обрабатываем каждую тему, следуя отсортированному порядку
