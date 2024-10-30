@@ -5,14 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        // Чтение количества задач
+        // Чтение количества задач не пригодиться
         int n = Integer.parseInt(reader.readLine());
 
         // Чтение времени, необходимого для каждой задачи, и сохранение их в список
